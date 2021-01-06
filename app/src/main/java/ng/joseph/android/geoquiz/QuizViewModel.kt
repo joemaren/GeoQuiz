@@ -1,10 +1,12 @@
 package ng.joseph.android.geoquiz
 
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 
-// private const val TAG = "QuizViewModel"
+private const val TAG = "QuizViewModel"
 
-class QuizViewModel : ViewModel() {
+
+class QuizViewModel(private val state: SavedStateHandle) : ViewModel() {
     var currentIndex = 0
     var isCheater = false
 
